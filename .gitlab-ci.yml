@@ -11,7 +11,8 @@ package:
     - yarn run prebuild
     - yarn run build
   artifacts:
-    - src/SignalR/clients/ts/signalr/dist
+    paths:
+      - src/SignalR/clients/ts/signalr/dist
     expire_in: 1 week
 
 publish:
