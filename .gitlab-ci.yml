@@ -19,7 +19,7 @@ publish:
   stage: publish
   script:
     - cd src/SignalR/clients/ts/signalr
-    - yarn version 5.0.0-dev-$CI_PIPELINE_IID
+    - yarn version --new-version 5.0.0-dev-$CI_PIPELINE_IID
     - yarn publish
 
 
