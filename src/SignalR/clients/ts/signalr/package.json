@@ -1,6 +1,6 @@
 {
   "name": "@euram/signalr",
-  "version": "5.0.0-dev",
+  "version": "1.0.0-test",
   "description": "ASP.NET Core SignalR Client",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -49,13 +49,12 @@
     "@types/jest": "^23.3.2",
     "@types/node": "^10.9.4",
     "@types/tough-cookie": "^2.3.6"
-
   },
   "dependencies": {
-    "eventsource": "^1.0.7",
-    "node-fetch": "^2.6.0",
     "abort-controller": "^3.0.0",
+    "eventsource": "^1.0.7",
     "fetch-cookie": "^0.7.3",
+    "node-fetch": "^2.6.0",
     "ws": "^6.0.0"
   }
 }
