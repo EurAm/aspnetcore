@@ -1,0 +1,28 @@
+image: node
+
+stages:
+  - build
+  - publish
+
+package:
+  stage: build
+  script:
+    - cd src/SignalR/clients/ts/signalr
+    - yarn run prebuild
+    - yarn run build
+  artifacts:
+    - src/SignalR/clients/ts/signalr/dist
+    expire_in: 1 week
+
+publish:
+  stage: publish
+  script:
+    - cd src/SignalR/clients/ts/signalr
+    - yarn version 5.0.0-dev-$CI_PIPELINE_IID
+    - yarn publish
+
+
+
+
+
+
