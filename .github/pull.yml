@@ -6,10 +6,5 @@ rules:                      # Array of rules
     mergeUnstable: false    # Optional, merge pull request even when the mergeable_state is not clean. Default: false
   - base: planisto
     upstream: master        # Required. Can be a branch in the same forked repo.
-    assignees:
-      - masterpoi
-    reviewers:
-      - masterpoi
-    conflictReviewers:
-      - masterpoi
+    mergeMethod: merge    
 label: ":arrow_heading_down: pull"  # Optional
